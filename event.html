@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>NGƯỜI ĐỢI NGƯỜI VỀ</title>
+  <style>
+    :root {
+      --ink: #252144;
+      --muted: #625e7d;
+      --purple: #6747d4;
+      --pink: #f16e9c;
+      --cream: #fff9f1;
+      --line: #e8e2f3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 28px 18px;
+      display: grid;
+      place-items: center;
+      background: #f0edff;
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+    main {
+      position: relative;
+      width: min(100%, 800px);
+      overflow: hidden;
+      border: 1px solid rgba(103, 71, 212, .15);
+      border-radius: 28px;
+      background: var(--cream);
+      box-shadow: 0 24px 70px rgba(48, 39, 93, .14);
+    }
+    .hero {
+      position: relative;
+      padding: clamp(34px, 8vw, 72px);
+      overflow: hidden;
+      background: linear-gradient(135deg, #e8e0ff, #fce3ed 72%, #ffe9d9);
+    }
+    .hero::after {
+      position: absolute;
+      right: -54px;
+      bottom: -112px;
+      width: 260px;
+      height: 260px;
+      border: 34px solid rgba(255,255,255,.38);
+      border-radius: 50%;
+      content: "";
+    }
+    .eyebrow {
+      position: relative;
+      z-index: 1;
+      margin: 0 0 18px;
+      color: var(--purple);
+      font-size: .82rem;
+      font-weight: 750;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    h1 {
+      position: relative;
+      z-index: 1;
+      max-width: 620px;
+      margin: 0;
+      font-size: clamp(2.2rem, 8vw, 4.6rem);
+      letter-spacing: -.045em;
+      line-height: 1.05;
+    }
+    .details { padding: clamp(24px, 6vw, 52px); }
+    .featured {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin: 0 0 25px;
+    }
+    .highlight {
+      min-height: 150px;
+      padding: 20px;
+      border-radius: 20px;
+      background: var(--purple);
+      color: white;
+    }
+    .highlight.deadline { background: var(--pink); }
+    .label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: .82rem;
+      font-weight: 650;
+      opacity: .9;
+    }
+    .highlight strong { display: block; font-size: clamp(1.35rem, 4.5vw, 2rem); line-height: 1.2; }
+    .highlight .time { margin-top: 6px; font-size: 1.05rem; }
+    .info {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0 22px;
+      margin: 0;
+    }
+    .info div { padding: 16px 0; border-bottom: 1px solid var(--line); }
+    dt { margin-bottom: 4px; color: var(--muted); font-size: .84rem; font-weight: 650; }
+    dd { margin: 0; font-size: 1.02rem; font-weight: 650; }
+    @media (max-width: 540px) {
+      body { padding: 12px; }
+      main { border-radius: 22px; }
+      .featured { grid-template-columns: 1fr; }
+      .highlight { min-height: auto; }
+      .info { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <p class="eyebrow">Sự kiện dành cho sinh viên đại học</p>
+      <h1>NGƯỜI ĐỢI<br>NGƯỜI VỀ</h1>
+    </header>
+    <section class="details" aria-label="Thông tin sự kiện">
+      <div class="featured">
+        <div class="highlight">
+          <span class="label">Ngày</span>
+          <strong>15 tháng 12</strong>
+          <span class="label time">Thời gian: 18:30–19:30</span>
+        </div>
+        <div class="highlight deadline">
+          <span class="label">Hạn đăng ký</span>
+          <strong>1 tháng 12</strong>
+        </div>
+      </div>
+      <dl class="info">
+        <div><dt>Đối tượng</dt><dd>Sinh viên đại học</dd></div>
+        <div><dt>Địa điểm</dt><dd>Hội trường 5B Đại Học Gia Định</dd></div>
+        <div><dt>Chi phí</dt><dd>Miễn phí</dd></div>
+      </dl>
+    </section>
+  </main>
+  <p style="margin: 28px auto; text-align: center;"><a href="home.html" style="display: inline-block; padding: 12px 22px; border-radius: 12px; background: #6747d4; color: #ffffff; font: 600 16px Segoe UI, Arial, sans-serif; text-decoration: none;">Quay lại</a></p>
+</body>
+</html>

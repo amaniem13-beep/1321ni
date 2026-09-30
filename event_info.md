@@ -1,0 +1,7 @@
+- Tên sự kiện: NGƯỜI ĐỢI NGƯỜI VỀ
+- Đối tượng: Sinh viên đại học
+- Ngày: 15 tháng 12
+- Thời gian: 18:30–19:30
+- Địa điểm: Hội trường 5B Đại Học Gia Định
+- Chi phí: Miễn phí
+- Hạn đăng ký: 1 tháng 12

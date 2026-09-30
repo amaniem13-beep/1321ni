@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Báo Cáo Cảm Nhận Sách</title>
+  <style>
+    :root {
+      --ink: #392f2a;
+      --muted: #776b62;
+      --brown: #806047;
+      --brown-dark: #5f4635;
+      --cream: #f4eee7;
+      --paper: #fffdf9;
+      --line: #e8ddd1;
+      --accent: #e9dccd;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: linear-gradient(145deg, #f3ece4, #fbf8f3 55%, #eee4d9);
+      color: var(--ink);
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.75;
+    }
+    .page { width: min(100% - 32px, 920px); margin: 48px auto; }
+    header {
+      padding: clamp(30px, 7vw, 64px);
+      border: 1px solid var(--line);
+      border-radius: 26px 26px 0 0;
+      background: var(--cream);
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--brown);
+      font-size: .78rem;
+      font-weight: 750;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(2.1rem, 7vw, 3.8rem);
+      letter-spacing: -.045em;
+      line-height: 1.12;
+    }
+    .book-title { margin: 20px 0 0; color: var(--brown-dark); font-size: 1.15rem; font-weight: 600; }
+    main {
+      padding: clamp(24px, 6vw, 54px);
+      border: 1px solid var(--line);
+      border-top: 0;
+      border-radius: 0 0 26px 26px;
+      background: var(--paper);
+      box-shadow: 0 22px 60px rgba(57, 47, 42, .09);
+    }
+    section { padding: 28px 0; border-bottom: 1px solid var(--line); }
+    section:first-child { padding-top: 0; }
+    section:last-child { padding-bottom: 0; border-bottom: 0; }
+    h2 { margin: 0 0 14px; color: var(--brown-dark); font-size: 1.35rem; line-height: 1.35; }
+    h3 { margin: 22px 0 7px; color: var(--brown); font-size: 1.04rem; }
+    p { margin: 0 0 13px; }
+    p:last-child { margin-bottom: 0; }
+    .book-card {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 0;
+      margin: 18px 0 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fffaf4;
+    }
+    .book-card div { padding: 15px 18px; border-bottom: 1px solid var(--line); }
+    .book-card div:nth-last-child(-n+2) { border-bottom: 0; }
+    dt { color: var(--muted); font-size: .82rem; font-weight: 650; }
+    dd { margin: 3px 0 0; font-weight: 600; }
+    blockquote {
+      margin: 18px 0 0;
+      padding: 16px 20px;
+      border-left: 4px solid var(--brown);
+      border-radius: 0 12px 12px 0;
+      background: #f6efe8;
+      color: var(--brown-dark);
+      font-style: italic;
+    }
+    .takeaway {
+      margin: 18px 0;
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fcf8f2;
+    }
+    .takeaway h3 { margin-top: 0; }
+    ul { margin: 8px 0 14px; padding-left: 24px; }
+    li { padding-left: 3px; margin: 4px 0; }
+    strong { color: var(--brown-dark); }
+    @media (max-width: 520px) {
+      .page { width: min(100% - 20px, 920px); margin: 16px auto; }
+      header { border-radius: 20px 20px 0 0; }
+      main { border-radius: 0 0 20px 20px; }
+      .book-card div:nth-last-child(-n+2) { border-bottom: 1px solid var(--line); }
+      .book-card div:last-child { border-bottom: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <p class="eyebrow">Báo cáo cảm nhận sách</p>
+      <h1>Giao tiếp bất kỳ ai</h1>
+      <p class="book-title">101 cách nâng cao kỹ năng giao tiếp</p>
+    </header>
+    <main>
+      <section aria-labelledby="book-info">
+        <h2 id="book-info">Thông tin về sách</h2>
+        <dl class="book-card">
+          <div><dt>Tên sách</dt><dd>Giao tiếp bất kỳ ai – 101 cách nâng cao kỹ năng giao tiếp</dd></div>
+          <div><dt>Tác giả</dt><dd>Jo Condrill, Bennie Bough</dd></div>
+          <div><dt>Dịch giả</dt><dd>Bạch Trà</dd></div>
+          <div><dt>Nhà xuất bản</dt><dd>NXB Công Thương</dd></div>
+          <div><dt>Năm xuất bản</dt><dd>2022</dd></div>
+        </dl>
+        <blockquote>Cuốn sách có tên tiếng Anh là <em>101 Ways to Improve Your Communication Skills Instantly</em>.</blockquote>
+      </section>
+
+      <section aria-labelledby="reason">
+        <h2 id="reason">Lý do lựa chọn cuốn sách</h2>
+        <p>Giao tiếp xuất hiện trong nhiều hoạt động như học tập, làm việc nhóm, thuyết trình, phỏng vấn, xây dựng các mối quan hệ và giao tiếp trên môi trường mạng. Với sinh viên, kiến thức chuyên môn quan trọng nhưng cần đi cùng khả năng trình bày ý tưởng, lắng nghe và làm việc với người khác.</p>
+        <p>Cuốn sách được lựa chọn vì nội dung hướng đến những cách ứng xử và kỹ năng có thể áp dụng trong đời sống hằng ngày. Việc đọc sách cũng là dịp để nhìn lại cách giao tiếp với bạn bè, giảng viên và các thành viên trong nhóm học tập.</p>
+      </section>
+
+      <section aria-labelledby="impression">
+        <h2 id="impression">Cảm nhận chung</h2>
+        <p>Điều gây ấn tượng là giao tiếp không phải năng khiếu cố định mà là kỹ năng có thể học hỏi và rèn luyện. Giao tiếp hiệu quả không chỉ là nói nhiều hay nói hay; nó còn cần lắng nghe, diễn đạt phù hợp, quan sát ngôn ngữ cơ thể, thái độ, cảm xúc và nhu cầu của người đối diện.</p>
+        <p>Thành công trong giao tiếp còn phụ thuộc vào cách người khác tiếp nhận thông tin. Cùng một nội dung nhưng cách nói khác nhau có thể tạo ra phản ứng khác nhau. Giao tiếp tốt giúp hai bên hiểu nhau và cùng hướng đến kết quả tốt hơn.</p>
+      </section>
+
+      <section aria-labelledby="lessons">
+        <h2 id="lessons">Những nội dung tâm đắc</h2>
+        <article class="takeaway">
+          <h3>Biết lắng nghe</h3>
+          <p>Người nói lưu loát nhưng không biết lắng nghe vẫn có thể giao tiếp chưa tốt. Khi làm việc nhóm, cần nghe hết ý kiến trước khi phản hồi; đôi khi người đối diện cần được lắng nghe và tôn trọng hơn là nhận ngay một giải pháp.</p>
+        </article>
+        <article class="takeaway">
+          <h3>Ấn tượng ban đầu và thái độ</h3>
+          <p>Cách chào hỏi, ánh mắt, nụ cười, tư thế, giọng nói và thái độ ảnh hưởng đến cách người khác nhìn nhận chúng ta. Trong môi trường đại học, sự lịch sự, chủ động và tự tin hữu ích khi gặp giảng viên, làm quen bạn mới, tham gia dự án hoặc phỏng vấn.</p>
+        </article>
+        <article class="takeaway">
+          <h3>Đặt câu hỏi để duy trì cuộc trò chuyện</h3>
+          <p>Câu hỏi mở tạo thêm cơ hội chia sẻ. Người giao tiếp tốt không nhất thiết phải nói nhiều; họ có thể tạo cơ hội để người khác muốn trò chuyện.</p>
+        </article>
+      </section>
+
+      <section aria-labelledby="practice">
+        <h2 id="practice">Liên hệ với giao tiếp trong cuộc sống</h2>
+        <p>Sau khi đọc sách, ba hướng cần chú ý là <strong>lắng nghe chủ động, diễn đạt rõ ràng và tôn trọng người đối diện</strong>. Khi nghe, nên tập trung vào nội dung và cảm xúc thay vì chuẩn bị phản bác. Khi trình bày, cần xác định ý chính và thông tin người nghe cần biết. Khi có bất đồng, trao đổi để tìm điểm chung thay vì buộc người khác đồng ý.</p>
+        <p>Một nhóm làm việc hiệu quả không nhất thiết là nhóm không có bất đồng, mà là nhóm có thể giải quyết bất đồng bằng giao tiếp tích cực.</p>
+      </section>
+
+      <section aria-labelledby="ai">
+        <h2 id="ai">Giao tiếp trong thời đại AI</h2>
+        <p>AI có thể hỗ trợ viết nội dung, tìm kiếm thông tin, phân tích dữ liệu, tạo hình ảnh, xây dựng ý tưởng và làm việc nhanh hơn. Tuy nhiên, để thông điệp hiệu quả, người sử dụng vẫn cần hiểu mình muốn nói gì, nói với ai và lựa chọn giọng điệu phù hợp.</p>
+        <blockquote>AI có thể hỗ trợ cách chúng ta truyền đạt, nhưng con người vẫn phải quyết định mình muốn truyền đạt điều gì và vì sao.</blockquote>
+        <p>AI có thể được dùng để gợi ý cách trình bày ý tưởng, kiểm tra cách diễn đạt, đề xuất câu hỏi thuyết trình, mô phỏng tình huống giao tiếp và xây dựng dàn ý bài nói. Nội dung cần được kiểm tra và điều chỉnh theo cách diễn đạt của bản thân. Càng có nhiều công cụ AI, con người càng cần giao tiếp, tư duy phản biện và xác định mục tiêu.</p>
+      </section>
+
+      <section aria-labelledby="self">
+        <h2 id="self">Liên hệ với bản thân</h2>
+        <p>Báo cáo nhận thấy đôi lúc cách diễn đạt chưa đủ rõ ràng, và khi làm việc nhóm có thể tập trung hoàn thành phần việc của mình mà chưa chú ý đến cảm nhận hoặc khó khăn của các thành viên khác.</p>
+        <p>Các nguyên tắc đặt ra là lắng nghe trước khi phản hồi, hiểu ý người khác trước khi đánh giá, chú ý từ ngữ trong tin nhắn nhóm, chủ động hỏi và xác nhận khi làm việc, đồng thời sử dụng AI có trách nhiệm để hỗ trợ thay vì suy nghĩ thay hoàn toàn.</p>
+      </section>
+
+      <section aria-labelledby="review">
+        <h2 id="review">Đánh giá về cuốn sách</h2>
+        <p>Điểm mạnh của sách là tính thực tế và những hướng tiếp cận giúp người đọc quan sát, điều chỉnh hành vi. Các kỹ năng bắt chuyện, lắng nghe, thuyết trình, ứng xử và làm việc với người khác phù hợp để áp dụng trong môi trường học tập.</p>
+        <p>Đọc sách chỉ là bước đầu; nếu không thực hành thì khó tạo thay đổi lâu dài. Giá trị của sách nằm ở việc biến những nguyên tắc thành thói quen. Đây là nền tảng để quan sát bản thân, điều chỉnh cách giao tiếp và từng bước hoàn thiện mình.</p>
+        <p>Giá trị lớn nhất sau khi đọc là bắt đầu chú ý hơn đến cách nói, cách nghe và cách đối xử với người khác, rồi tiếp tục áp dụng trong học tập, làm việc nhóm và công việc sau này.</p>
+      </section>
+    </main>
+  </div>
+  <p style="margin: 28px auto; text-align: center;"><a href="home.html" style="display: inline-block; padding: 12px 22px; border-radius: 12px; background: #6747d4; color: #ffffff; font: 600 16px Segoe UI, Arial, sans-serif; text-decoration: none;">Quay lại</a></p>
+</body>
+</html>
